@@ -1,0 +1,9 @@
+name: 'github_action_template'
+description: 'github action template'
+author: 'Anton Koshel <fxpw@outlook.com>'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'eye'  
+  color: 'gray-dark'
