@@ -2,7 +2,7 @@
 set -e
 
 contains_old_php_format() {
-	echo "$1" | grep -q -E '^\s*<?php|^<?='
+	echo "$1" | grep -q -E '<?php|<?='
 }
 
 git config --global credential.helper "store --file=.git/credentials"
@@ -35,6 +35,6 @@ done
 
 
 if $need_throw_error; then
-	echo "Find files for localization."
+	echo "Find files whit old template."
 	exit 1
 fi
