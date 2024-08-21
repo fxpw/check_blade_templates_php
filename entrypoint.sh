@@ -2,7 +2,7 @@
 set -e
 
 contains_old_php_format() {
-	echo "$1" | grep -q -E '<?php|<?='
+	echo "$1" | grep -q '<?php|<?='
 }
 
 git config --global credential.helper "store --file=.git/credentials"
