@@ -1,6 +1,4 @@
-FROM ubuntu:latest
-
-RUN apt-get update && apt-get -y install zip unzip
+FROM fxpw/linux_base_distro:latest
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh

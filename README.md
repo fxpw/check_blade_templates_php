@@ -1,4 +1,4 @@
-# GitHub Action Template
+# GitHub Action Template for check blade templates
 
 Go to entrypoint.sh and write your functions
 
@@ -9,13 +9,16 @@ Use with [GitHub Actions](https://github.com/features/actions)
 _.github/workflows/template.yml_
 
 ```
-name: github action template
+name: check_blade_template_php
 on: pull_request
 jobs:
-  ghat:
+  check_blade_template_php:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v1
-        - uses: fxpw/github_action_template_repo@main
+		- name: Run template check
+          uses: fxpw/check_localization_php@main
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
