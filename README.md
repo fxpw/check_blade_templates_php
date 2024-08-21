@@ -9,15 +9,15 @@ Use with [GitHub Actions](https://github.com/features/actions)
 _.github/workflows/template.yml_
 
 ```
-name: check_blade_template_php
+name: check_blade_templates_php
 on: pull_request
 jobs:
-  check_blade_template_php:
+  check_blade_templates_php:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v1
 		- name: Run template check
-          uses: fxpw/check_localization_php@main
+          uses: fxpw/check_blade_templates_php@main
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```

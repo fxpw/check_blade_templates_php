@@ -1,5 +1,5 @@
-name: 'github_action_template'
-description: 'github action template'
+name: 'check_blade_templates_php'
+description: 'github action template for check old use of php in blade files'
 author: 'Anton Koshel <fxpw@outlook.com>'
 runs:
   using: 'docker'
