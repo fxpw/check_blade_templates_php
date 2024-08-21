@@ -12,7 +12,7 @@ git config --global --add safe.directory /github/workspace
 if [[ "$GITHUB_EVENT_NAME" == "pull_request" ]]; then
 	BASE_BRANCH="${GITHUB_BASE_REF}"
 else
-	BASE_BRANCH="main"
+	BASE_BRANCH="test-branch"
 fi
 
 git fetch origin
