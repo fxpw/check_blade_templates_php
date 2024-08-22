@@ -6,7 +6,7 @@ Go to entrypoint.sh and write your functions
 
 Use with [GitHub Actions](https://github.com/features/actions)
 
-_.github/workflows/template.yml_
+.github/workflows/template.yml
 
 ```
 name: check_blade_templates_php
