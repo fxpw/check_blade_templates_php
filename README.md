@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v1
-		- name: Run template check
+	- name: Run template check
           uses: fxpw/check_blade_templates_php@main
           env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
